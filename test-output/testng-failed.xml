@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="Email" value="jaiarun45@gmail.com"/>
+  <parameter name="PromptValue" value="Automation Testing"/>
+  <parameter name="Address" value="1/404,Tambaram, Chennai-600059, TamilNadu India"/>
+  <parameter name="OHRM Url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+  <parameter name="Phone" value="9876543210"/>
+  <parameter name="Country" value="india"/>
+  <parameter name="Tabs" value="Selenium"/>
+  <parameter name="OC Url" value="https://demo.opencart.com/"/>
+  <parameter name="url" value="https://testautomationpractice.blogspot.com/"/>
+  <parameter name="Name1" value="JAIARUNPRAKASH"/>
+  <parameter name="Name" value="Jaiarunprakash"/>
+  <test thread-count="5" name="Test Case(failed)">
+    <classes>
+      <class name="org.end.Project">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="reSize"/>
+          <include name="frames" invocation-numbers="0"/>
+          <include name="launchBrowser"/>
+          <include name="homeButton"/>
+        </methods>
+      </class> <!-- org.end.Project -->
+    </classes>
+  </test> <!-- Test Case(failed) -->
+</suite> <!-- Failed suite [Suite] -->

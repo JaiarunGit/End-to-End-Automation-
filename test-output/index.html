@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Eclipse workspace\EndToEnd_Project\TestNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="calendarDate">calendarDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="checkBox">checkBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="doubleClick">doubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="dropDown(india)">dropDown(india)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="fillTextBox(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India)">fillTextBox(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="frames(JAIARUNPRAKASH)">frames(JAIARUNPRAKASH)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="homeButton">homeButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="jsAlert(Automation Testing)">jsAlert(Automation Testing)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="newBrowserWindow">newBrowserWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="opencartLink(https://demo.opencart.com/)">opencartLink(https://demo.opencart.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="orangeHrmLink(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)">orangeHrmLink(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="paginationTable">paginationTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="postsAtomLink">postsAtomLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="radioButton">radioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="reSize">reSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="selectable">selectable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="sliderBar">sliderBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="table">table</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.end.Project" class="method navigator-link" hash-for-method="tabsLink(Selenium)">tabsLink(Selenium)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.end.Project</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calendarDate">
+                  </a> <!-- calendarDate -->
+                  <span class="method-name">calendarDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkBox">
+                  </a> <!-- checkBox -->
+                  <span class="method-name">checkBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="doubleClick">
+                  </a> <!-- doubleClick -->
+                  <span class="method-name">doubleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDrop">
+                  </a> <!-- dragAndDrop -->
+                  <span class="method-name">dragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropDown(india)">
+                  </a> <!-- dropDown(india) -->
+                  <span class="method-name">dropDown</span>
+                  <span class="parameters">(india)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fillTextBox(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India)">
+                  </a> <!-- fillTextBox(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India) -->
+                  <span class="method-name">fillTextBox</span>
+                  <span class="parameters">(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="frames(JAIARUNPRAKASH)">
+                  </a> <!-- frames(JAIARUNPRAKASH) -->
+                  <span class="method-name">frames</span>
+                  <span class="parameters">(JAIARUNPRAKASH)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeButton">
+                  </a> <!-- homeButton -->
+                  <span class="method-name">homeButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="jsAlert(Automation Testing)">
+                  </a> <!-- jsAlert(Automation Testing) -->
+                  <span class="method-name">jsAlert</span>
+                  <span class="parameters">(Automation Testing)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newBrowserWindow">
+                  </a> <!-- newBrowserWindow -->
+                  <span class="method-name">newBrowserWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="opencartLink(https://demo.opencart.com/)">
+                  </a> <!-- opencartLink(https://demo.opencart.com/) -->
+                  <span class="method-name">opencartLink</span>
+                  <span class="parameters">(https://demo.opencart.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="orangeHrmLink(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)">
+                  </a> <!-- orangeHrmLink(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login) -->
+                  <span class="method-name">orangeHrmLink</span>
+                  <span class="parameters">(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="paginationTable">
+                  </a> <!-- paginationTable -->
+                  <span class="method-name">paginationTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postsAtomLink">
+                  </a> <!-- postsAtomLink -->
+                  <span class="method-name">postsAtomLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="radioButton">
+                  </a> <!-- radioButton -->
+                  <span class="method-name">radioButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reSize">
+                  </a> <!-- reSize -->
+                  <span class="method-name">reSize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectable">
+                  </a> <!-- selectable -->
+                  <span class="method-name">selectable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sliderBar">
+                  </a> <!-- sliderBar -->
+                  <span class="method-name">sliderBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="table">
+                  </a> <!-- table -->
+                  <span class="method-name">table</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tabsLink(Selenium)">
+                  </a> <!-- tabsLink(Selenium) -->
+                  <span class="method-name">tabsLink</span>
+                  <span class="parameters">(Selenium)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Eclipse workspace\EndToEnd_Project\TestNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;Email&quot; value=&quot;jaiarun45@gmail.com&quot;/&gt;
+  &lt;parameter name=&quot;Address&quot; value=&quot;1/404,Tambaram, Chennai-600059, TamilNadu India&quot;/&gt;
+  &lt;parameter name=&quot;OHRM Url&quot; value=&quot;https://opensource-demo.orangehrmlive.com/web/index.php/auth/login&quot;/&gt;
+  &lt;parameter name=&quot;Prompt Value&quot; value=&quot;Automation Testing&quot;/&gt;
+  &lt;parameter name=&quot;Phone&quot; value=&quot;9876543210&quot;/&gt;
+  &lt;parameter name=&quot;Country&quot; value=&quot;india&quot;/&gt;
+  &lt;parameter name=&quot;Tabs&quot; value=&quot;Selenium&quot;/&gt;
+  &lt;parameter name=&quot;OC Url&quot; value=&quot;https://demo.opencart.com/&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://testautomationpractice.blogspot.com/&quot;/&gt;
+  &lt;parameter name=&quot;Name1&quot; value=&quot;JAIARUNPRAKASH&quot;/&gt;
+  &lt;parameter name=&quot;Name&quot; value=&quot;Jaiarunprakash&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test Case&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.end.Project&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test Case --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test Case (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'orangeHrmLink')
+data.setCell(0, 2, 'org.end.Project')
+data.setCell(0, 3, 10254);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'opencartLink')
+data.setCell(1, 2, 'org.end.Project')
+data.setCell(1, 3, 7329);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'homeButton')
+data.setCell(2, 2, 'org.end.Project')
+data.setCell(2, 3, 5136);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'frames')
+data.setCell(3, 2, 'org.end.Project')
+data.setCell(3, 3, 5038);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'fillTextBox')
+data.setCell(4, 2, 'org.end.Project')
+data.setCell(4, 3, 1619);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tabsLink')
+data.setCell(5, 2, 'org.end.Project')
+data.setCell(5, 3, 1003);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'postsAtomLink')
+data.setCell(6, 2, 'org.end.Project')
+data.setCell(6, 3, 768);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'newBrowserWindow')
+data.setCell(7, 2, 'org.end.Project')
+data.setCell(7, 3, 764);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'jsAlert')
+data.setCell(8, 2, 'org.end.Project')
+data.setCell(8, 3, 737);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkBox')
+data.setCell(9, 2, 'org.end.Project')
+data.setCell(9, 3, 660);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'table')
+data.setCell(10, 2, 'org.end.Project')
+data.setCell(10, 3, 600);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'reSize')
+data.setCell(11, 2, 'org.end.Project')
+data.setCell(11, 3, 542);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'paginationTable')
+data.setCell(12, 2, 'org.end.Project')
+data.setCell(12, 3, 517);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'sliderBar')
+data.setCell(13, 2, 'org.end.Project')
+data.setCell(13, 3, 484);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'dragAndDrop')
+data.setCell(14, 2, 'org.end.Project')
+data.setCell(14, 3, 379);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'doubleClick')
+data.setCell(15, 2, 'org.end.Project')
+data.setCell(15, 3, 376);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'calendarDate')
+data.setCell(16, 2, 'org.end.Project')
+data.setCell(16, 3, 367);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'selectable')
+data.setCell(17, 2, 'org.end.Project')
+data.setCell(17, 3, 360);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'dropDown')
+data.setCell(18, 2, 'org.end.Project')
+data.setCell(18, 3, 273);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'radioButton')
+data.setCell(19, 2, 'org.end.Project')
+data.setCell(19, 3, 165);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.end.Project</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">launchBrowser(https://testautomationpractice.blogspot.com/)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">fillTextBox(Jaiarunprakash, jaiarun45@gmail.com, 9876543210, 1/404,Tambaram, Chennai-600059, TamilNadu India)</span>
+                <span class="method-start">12985 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">radioButton</span>
+                <span class="method-start">14620 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkBox</span>
+                <span class="method-start">14793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dropDown(india)</span>
+                <span class="method-start">15465 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectable</span>
+                <span class="method-start">15761 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">calendarDate</span>
+                <span class="method-start">16126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">opencartLink(https://demo.opencart.com/)</span>
+                <span class="method-start">16500 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">orangeHrmLink(https://opensource-demo.orangehrmlive.com/web/index.php/auth/login)</span>
+                <span class="method-start">23850 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postsAtomLink</span>
+                <span class="method-start">34137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">table</span>
+                <span class="method-start">34912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">paginationTable</span>
+                <span class="method-start">35540 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tabsLink(Selenium)</span>
+                <span class="method-start">36062 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">newBrowserWindow</span>
+                <span class="method-start">37069 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">jsAlert(Automation Testing)</span>
+                <span class="method-start">37842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">doubleClick</span>
+                <span class="method-start">38589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">dragAndDrop</span>
+                <span class="method-start">38980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sliderBar</span>
+                <span class="method-start">39364 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">frames(JAIARUNPRAKASH)</span>
+                <span class="method-start">39854 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">reSize</span>
+                <span class="method-start">44910 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">homeButton</span>
+                <span class="method-start">45464 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">50765 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
